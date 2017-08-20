@@ -98,9 +98,9 @@ output {
  3. Create `filebeat.yml` file.
  ```yml
  filebeat.prospectors:
- - input_type: log
-   paths:
-     - D:\log\*.log
+ 4. input_type: log
+      paths:
+         - D:\log\*.log
  output.logstash:
      hosts: ["localhost:5044"]
  ``` 
@@ -113,6 +113,21 @@ output {
 
  6. On Successful start you shall see data being written in log.
 > libbeat.logstash.publish.write_bytes=61768 libbeat.logstash.published_and_acked_events=1434 
+
+#### Kibana
+
+ 1. Download Kibana zip.
+ > https://www.elastic.co/downloads/kibana
+ 
+ 2. Extract zip file.
+ 
+ 3. Goto bin directory.
+ 
+ 4. Start Kibana application server.
+ ```sh
+ kibana.bat
+ ```
+ 5. Browse for Kibana UI at `http://localhost:5601/` 
 
 ## Authors
 
