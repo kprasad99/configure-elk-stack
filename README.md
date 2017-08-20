@@ -54,7 +54,7 @@ cd elasticsearch-{version}\bin
  2.  Extract the zip file.
  3. Go to bin directory.
  4. create logstash.conf file with below configuration.
- ````
+ ```
 input {
   beats {
     # The port to listen on for filebeat connections.
@@ -68,14 +68,14 @@ output {
     hosts => localhost
   }
 }
- ````
+ ```
  5. Start the logstash application with previous configuration file created.
- ````
+ ```cmd
  logstash.bat -f logstash.conf
- ````
+ ```
  6. Verify application is started successfully.
  Browse for `http://localhost:9600` you should get ouput something similar to below json data.
- ````
+ ```
  {
    "host":"kp-pc",
    "version":"5.5.1",
@@ -86,7 +86,7 @@ output {
    "build_sha":"4267263f454d5cfeb85d98cec4925c6aa28d230b",
    "build_snapshot":false
 }
- ````
+ ```
  > **Note:** Since we have configured filebeat as input make sure in log 5044 is started. 
 
 ## Authors
