@@ -25,11 +25,13 @@ These instructions will get you a copy of the project up and running on your loc
 https://www.elastic.co/downloads/elasticsearch
  ````
  2. Extract zip.
+ 
  3. cd to bin directory.
 ````
 cd elasticsearch-{version}\bin
 ````
  4. Start Elasticsearch application.
+ 
  5. Verify Elasticsearch application starts successfully.
  Browse for url `http://localhost:9200/` you should get output something similar to below json data.
 ```json
@@ -52,7 +54,9 @@ cd elasticsearch-{version}\bin
  > https://www.elastic.co/downloads/logstash
  
  2.  Extract the zip file.
+ 
  3. Go to bin directory.
+ 
  4. create logstash.conf file with below configuration.
  ```config
 input {
@@ -95,6 +99,7 @@ output {
  > https://www.elastic.co/downloads/beats/filebeat
 
  2. Extract zip file.
+ 
  3. Create `filebeat.yml` file.
  ```yml
  filebeat.prospectors:
