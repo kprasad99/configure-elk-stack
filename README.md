@@ -8,15 +8,15 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+>- Elasticsearch
+>- Logstash
+>- Kibana
+>- FileBeat
 
-```
-* Elasticsearch
-* Logstash
-* Kibana
-* FileBeat
-```
+### Log Data Flow
+![ELK](https://github.com/kprasad99/myfirstrepo/blob/master/images/elk.png)
 
-### Installing
+### Install and configure Elasticsearch
 
 Download Elasticsearch
 
@@ -27,7 +27,4 @@ Download Elasticsearch
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
