@@ -98,9 +98,9 @@ output {
  3. Create `filebeat.yml` file.
  ```yml
  filebeat.prospectors:
- 4. input_type: log
-      paths:
-         - D:\log\*.log
+ - input_type: log
+   paths:
+     - D:\log\*.log
  output.logstash:
      hosts: ["localhost:5044"]
  ``` 
