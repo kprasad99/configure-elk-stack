@@ -13,12 +13,41 @@ These instructions will get you a copy of the project up and running on your loc
 >- Kibana
 >- FileBeat
 
-### Log Data Flow
+### Log data flow diagram
 ![ELK](https://github.com/kprasad99/myfirstrepo/blob/master/images/elk.png)
 
-### Install and configure Elasticsearch
+### Installation and Configuration
 
-Download Elasticsearch
+#### Elasticsearch
+
+#### [step1] Download Elasticsearch zip.
+````
+https://www.elastic.co/downloads/elasticsearch
+ ````
+#### [step2] Extract zip.
+#### [step3] cd to bin directory.
+````
+cd elasticsearch-{version}\bin
+````
+#### [step4] start Elasticsearch application.
+#### [step5] Verify Elasticsearch application starts successfully.
+ Browse for url `http://localhost:9200/` you should get output something similar to below json data.
+ 
+
+> {
+>   "name" : "DQKs7b9",
+>   "cluster_name" : "elasticsearch",
+>   "cluster_uuid" : "Nn6ZBMzvQgyDy-YoO8a17w",
+>   "version" : {
+>      "number" : "5.5.1",
+>      "build_hash" : "19c13d0",
+>      "build_date" : "2017-07-18T20:44:24.823Z",
+>      "build_snapshot" : false,
+>      "lucene_version" : "6.6.0"
+>   },
+>  "tagline" : "You Know, for Search"
+> }
+
 
 ## Authors
 
